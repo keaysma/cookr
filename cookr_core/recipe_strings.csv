@@ -1,0 +1,56 @@
+id,string,output,dependency
+0,fill a pot with @st cups of water,none,-4
+1,heat up your pan and put @st tablespoons of oil in it,none,-4
+2,turn on the oven to @ot degrees,none,-4
+3,julien your @i with a kitchen knife,chopped @i,-1
+4,dice the @i into small cubes,cubed @i,-1
+5,cook all of your @i in the pan for @st minutes,cooked @i,1
+6,boil the @i and @i together in a pot for @t minutes,boiled @i,0
+7,breath in and out for @st minutes,none,-2
+8,saute the @i in the pan$$ it should take about @at minutes to cook all the way through,sauted @i,1
+9,bake the @i$$ @i$$ and @i$$ for @ht minutes,@i bake,2
+10,fire up the slow cooker to low heat,none,-4
+11,fire up the slow cooker to hight heat,none,-4
+12,let the @i sit in the slow cooker for @ht hours,slow cooked @i,10
+13,let the @i sit in the slow cooker for @st hours,slow cooked @i,11
+14,blend the @i and @i together until smooth,@i smoothie,-1
+15,pour the @i into a bowl,none,-1
+16,pray,will of christ,-4
+17,throw away your @i,none,-1
+18,chill your @i for @st minutes,chilled @i,-1
+19,whisk your @i rapidly for at least @st minutes,whisked @i,15
+20,its time to plate your @i! put it on the nicest plate you have,plated @i,-1
+21,garnish your @i with a healthy pinch of salt,garnished and @i,20
+22,drop your @i in the toaster for @ht seconds,toasted @i,-1
+23,carefully torch your @i for @st seconds,torched @i,-1
+24,rinse your @i in the sink,rinsed @i,-1
+25,chop your @i into strips,strips of @i,-1
+26,throw your @i into your sink's garbage disposal$$ and run the garbage disposal for @t seconds,none,-1
+27,grate the @i,grated @i,-1
+28,peel your @i,peeled @i,-1
+29,stare at your creation in absolute awe,none,-4
+30,plug in and turn on the extra large blender,none,-4
+31,put your @i$$ @i$$ @i$$ and @i in the extra large blender and turn it all into a mysterious smoothie,mysterious smoothie with some @i in it,30
+32,turn off the extra large blender before it bumps up your energy bill,none,31
+33,oh... it looks like your @i is stale,stale @i,-4
+34,pickle your @i. Use a brine made of salt and @i. This will take @at hours,pickled @i,-4
+
+###Rules###
+
+##Dependency##
+#-1 = No dependency
+#-2 = cannot be first line
+#-3 = cannot be last line
+#-4 = can only appear once (should be a separate param later)
+#-5 = can only appear once, and cannot be first (this is really going to start turning into a mess...)
+#>=0 - depends on this string to appear first
+
+##Tokens##
+#@i - Ingredient
+#@t - Time/Number (1-30)
+#@st - short time/small number (1-10)
+#@ht - hour time (10-60)
+#@lt - long time/big number (30-120)
+#@ot - overly-long time/over temperature (200-400)
+#@at - any time (1-426)
+#$$ - comma
