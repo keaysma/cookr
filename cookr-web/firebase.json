@@ -1,0 +1,12 @@
+{
+  "rulesFile": "database.rules.json",
+  "hosting": {
+    "public": "build",
+    "site": "cookr-web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
